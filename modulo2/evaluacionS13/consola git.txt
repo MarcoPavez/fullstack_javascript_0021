@@ -1,0 +1,57 @@
+marco@LAPTOP-84FHNSMI MINGW64 /c/Proyectos/nimrodel
+$ git init
+Initialized empty Git repository in C:/Proyectos/nimrodel/.git/
+
+marco@LAPTOP-84FHNSMI MINGW64 /c/Proyectos/nimrodel (master)
+$ git add .
+giwarning: in the working copy of 'assets/js/jquery-3.6.4.min.js', LF will be replaced by CRLF the next time Git touches it
+t commit
+marco@LAPTOP-84FHNSMI MINGW64 /c/Proyectos/nimrodel (master)
+$ git commit -m "crea archivos proyecto nimrodel"
+[master (root-commit) 20064d8] crea archivos proyecto nimrodel
+ 14 files changed, 733 insertions(+)
+ create mode 100644 assets/bebidas.jpg
+ create mode 100644 assets/chorillana.jpg
+ create mode 100644 assets/fondo.jpg
+ create mode 100644 assets/js/index.js
+ create mode 100644 assets/js/jquery-3.6.4.min.js
+ create mode 100644 assets/mojito.jpg
+ create mode 100644 assets/n.png
+ create mode 100644 assets/shop.jpeg
+ create mode 100644 assets/styles/styles.css
+ create mode 100644 assets/tablas.jpg
+ create mode 100644 assets/vino.jpg
+ create mode 100644 contacto.html
+ create mode 100644 index.html
+ create mode 100644 reserva.html
+
+marco@LAPTOP-84FHNSMI MINGW64 /c/Proyectos/nimrodel (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        assets/IMG1.jpg
+        assets/IMG2.jpg
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+marco@LAPTOP-84FHNSMI MINGW64 /c/Proyectos/nimrodel (master)
+$ git add .
+git
+marco@LAPTOP-84FHNSMI MINGW64 /c/Proyectos/nimrodel (master)
+$ git commit -m "crea nuevo carrusel de presentacion a nimrodel"
+[master 55ce8a9] crea nuevo carrusel de presentacion a nimrodel
+ 3 files changed, 61 insertions(+), 7 deletions(-)
+ create mode 100644 assets/IMG1.jpg
+ create mode 100644 assets/IMG2.jpg
+
+marco@LAPTOP-84FHNSMI MINGW64 /c/Proyectos/nimrodel (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+

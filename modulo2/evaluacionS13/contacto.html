@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/n.png">
+    <title>Contacto</title>
+</head>
+<body>
+
+    <form>
+        <h2>Comuniquémonos</h2>
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre" placeholder="María Vargas" required><br><br>
+        <label for="correo">Correo</label>
+        <input type="email" name="correo" id="correo" placeholder="mariavargas@correo.com" required><br><br>
+        <label for="telefono">Teléfono</label>
+        <input type="text" name="telefono" id="telefono" placeholder="951236874" required><br><br>
+        <label for="motivo">Motivo</label>
+        <select name="motivo" id="motivo" required>
+            <option value="" selected>-</option>
+            <option value="felicitaciones">Felicitaciones</option>
+            <option value="reclamos">Reclamos</option>
+            <option value="consultas">Consultas</option>
+            <option value="sugerencias">Sugerencias</option>
+        </select><br><br>
+        <textarea cols="30" rows="10" required></textarea><br><br>
+        <input name="motivo" type="submit" value="Enviar">
+    </form>
+    
+</body>
+</html>
