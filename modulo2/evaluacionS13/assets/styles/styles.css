@@ -1,0 +1,312 @@
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media (max-width: 767px) {
+  div img {
+    width: 10%;
+    height: 10%;
+  }
+
+  div.navbar {
+    background-image: url("../fondo.jpg");
+    background-size: 100%;
+    background-position: -60px 20px;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    color: white;
+    font-size: 0.7rem;
+  }
+
+  main h1 {
+    color: gray;
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .destacados {
+    border-top-style: solid;
+    border-top-width: 1px;
+    transform: translateX(50%);
+    width: 50%;
+  }
+
+  .destacados h2 {
+    text-align: center;
+    font-size: 0.8rem;
+  }
+
+  .gaseosas,
+  .tablas,
+  .shops {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gaseosas img,
+  .tablas img,
+  .shops img {
+    width: 80%;
+  }
+
+  .formComuniquemonos,
+  .formReserva {
+    display: none;
+  }
+
+  footer {
+    background-color: black;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+
+  footer p {
+    color: white;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div img {
+    width: 10%;
+    height: 10%;
+  }
+
+  div.navbar {
+    background-image: url("../fondo.jpg");
+    background-size: 50%;
+    background-position: -4vh 3vh;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    color: white;
+    font-size: 0.7rem;
+  }
+
+  main h1 {
+    color: gray;
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .destacados {
+    border-top-style: solid;
+    border-top-width: 1px;
+    transform: translateX(50%);
+    width: 50%;
+  }
+
+  .destacados h2 {
+    text-align: center;
+  }
+
+  .gaseosas,
+  .tablas,
+  .shops {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pantallaMedia {
+    display: flex;
+    gap: 10vh;
+    justify-content: center;
+  }
+
+  .pantallaMedia .gaseosas img,
+  .pantallaMedia .tablas img {
+    height: 35vh;
+    width: 60vh;
+  }
+
+  .gaseosas img,
+  .tablas img,
+  .shops img {
+    height: 35vh;
+    width: 60vh;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 1%;
+    background-color: #070707;
+    width: 60%;
+    color: white;
+  }
+
+  .formComuniquemonos {
+    display: flex;
+    justify-content: center;
+  }
+
+  .formComuniquemonos form {
+    border-style: solid;
+    border-radius: 10px;
+  }
+
+  .formReserva {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .formReserva form {
+    border-style: solid;
+    border-radius: 10px;
+  }
+
+  footer {
+    background-image: url("../fondo.jpg");
+    background-size: 80%;
+    background-position: 20vh 3vh;
+    margin-top: 10px;
+    background-color: black;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+
+  footer p {
+    color: white;
+    text-align: center;
+  }
+}
+
+@media (min-width:992px) {
+  header div {
+    display: flex;
+    background-image: url("../fondo.jpg");
+    background-repeat: repeat;
+    background-size: 25%;
+    background-clip: border-box;
+    padding-bottom: 1rem;
+  }
+  
+  
+  
+  header div nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    font-size: 1rem;
+    margin-top: 3rem;
+    margin-bottom: -5px;
+    color: white;
+  }
+  
+  header div img {
+    width: 3rem;
+    height: 3rem;
+  }
+  
+  h1 {
+    color: gray;
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 3%;
+  }
+  
+  main section .destacados {
+    transform: translateX(50%);
+    width: 50%;
+    border-top-style: solid;
+    border-top-width: 1px;
+  }
+
+  .destacados h2 {
+    text-align: center;
+  }
+  
+  .destacadoSemana {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .pantallaMedia, .shops{
+    display: flex;
+    margin-top: 5%;
+  }
+
+  .pantallaMedia{
+    padding-left: 15%;
+  }
+
+  .shops{
+    flex-direction: column;
+  }
+  
+  .gaseosas img,
+  .tablas img,
+  .shops img {
+    width: 60%;
+    height: 60%;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 1%;
+    background-color: #070707;
+    width: 20%;
+    color: white;
+  }
+  
+  .formComuniquemonos {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .formComuniquemonos form {
+    border-style: solid;
+    border-radius: 10px;
+  }
+  
+  .formReserva {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .formReserva form {
+    border-style: solid;
+    border-radius: 10px;
+  }
+  
+  footer {
+    background-image: url("../fondo.jpg");
+    background-size: 75%;
+    padding-top: 10rem;
+  }
+  
+  footer p {
+    text-align: center;
+    color: white;
+    padding-bottom: 5rem;
+  }
+}
