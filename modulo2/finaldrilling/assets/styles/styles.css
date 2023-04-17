@@ -1,0 +1,370 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  font-family: "Jost", sans-serif;
+}
+
+/* Estructura principal */
+
+body {
+  display: flex;
+  position: relative;
+}
+
+header {
+  position: fixed;
+  width: 27.5%;
+  height: 100%;
+}
+
+main {
+  width: 71.5%;
+  margin-left: 28.5%;
+}
+
+/* Navbar */
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  height: 100%;
+  margin-right: 2vw;
+}
+
+#logoDigimon {
+  display: flex;
+  justify-content: start;
+}
+
+#logoDigimon img {
+  width: 25vw;
+}
+
+nav h1 {
+  font-size: 6vw;
+  font-weight: 900;
+  line-height: 7vw;
+  text-align: left;
+  color: #000000;
+  margin-top: 10vw;
+}
+
+#ejemploDigimon {
+  display: flex;
+  flex-direction: column;
+}
+
+.transparenteDigimon {
+  width: 20vw;
+  margin-block: 20vw;
+}
+
+.transparenteDigimon img {
+  width: 100%;
+}
+
+#pNav {
+  border-top-style: solid;
+  border-top-width: 1px;
+  text-align: left;
+  font-size: 2.5vw;
+  margin-bottom: 20vw;
+}
+
+/* Main */
+
+#cartasDigimon {
+  display: grid;
+  gap: 3vw;
+  text-align: center;
+  grid-template-areas: "d d d";
+}
+
+#cartasDigimon img {
+  width: 12.5vw;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 2px;
+  transition: 0.5s;
+}
+
+.carta {
+  width: 20vw;
+  height: auto;
+  text-align: center;
+  background: linear-gradient(
+    0deg,
+    rgba(252, 87, 0, 1) 5%,
+    rgba(255, 219, 63, 1) 95%
+  );
+  border-radius: 2vw;
+  border-style: solid;
+  border-width: 1px;
+  padding-block: 1vw;
+  box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.25);
+}
+
+.carta h5,
+.carta p {
+  margin: 0.5vw;
+}
+
+h5 {
+  font-size: 0.75rem;
+}
+
+.carta p {
+  font-size: 0.65rem;
+}
+
+button {
+  border-radius: 2vw;
+  font-size: 0.6rem;
+  padding-inline: 1vw;
+  border-style: solid;
+  border-width: 1px;
+  transition: 0.3s;
+}
+
+button:hover {
+  padding-inline: 2vw;
+  background-color: #074f8f;
+  color: white;
+  border-color: black;
+  font-weight: 500;
+}
+
+#cartaIndividualDigimon {
+  margin-left: 10vw;
+  width: 25vw;
+  text-align: center;
+  background-color: #e9c46a;
+  border-radius: 2vw;
+  border-style: solid;
+  border-width: 1px;
+  padding-block: 2vw;
+  box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.25);
+}
+
+/* Boton regreso a inicio */
+
+#btn-top {
+  display: none;
+  position: fixed;
+  bottom: 15vw;
+  right: 30px;
+  font-size: 0.75rem;
+  border: none;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  padding-inline: 2vw;
+  border-radius: 2vw;
+  transition: 1s;
+}
+
+#btn-top:hover {
+  background-color: #555;
+}
+
+@media (max-width: 320px) {
+  #logoDigimon img {
+    width: 20vw;
+  }
+
+  .transparenteDigimon {
+    width: 20vw;
+    margin-block: 25vw;
+  }
+
+  #cartasDigimon {
+    gap: 1vw;
+    grid-template-areas: "d d";
+  }
+
+  .carta {
+    width: 25vw;
+  }
+
+  .carta h5,
+  .carta p {
+    margin: 0.5vw;
+  }
+
+  h5 {
+    font-size: 0.575rem;
+  }
+
+  .carta p {
+    font-size: 0.55rem;
+  }
+
+  button {
+    font-size: 0.45rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  nav h1 {
+    font-size: 5vw;
+    font-weight: 700;
+    line-height: 7vw;
+    margin-top: 5vw;
+  }
+
+  #logoDigimon img {
+    width: 20vw;
+  }
+
+  .transparenteDigimon {
+    width: 15vw;
+    margin-block: 7.5vw;
+  }
+
+  #cartasDigimon {
+    grid-template-areas: "d d d";
+  }
+
+  #pNav {
+    font-size: 2vw;
+    margin-bottom: 27.5vw;
+    padding-bottom: 10vw;
+  }
+
+  .carta {
+    width: 20vw;
+  }
+
+  .carta h5,
+  .carta p {
+    margin: 0.55vw;
+  }
+
+  h5 {
+    font-size: 0.75rem;
+  }
+
+  .carta p {
+    font-size: 0.7rem;
+  }
+
+  button {
+    font-size: 0.7rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  nav h1 {
+    font-size: 4.5vw;
+    font-weight: 700;
+    line-height: 4.5vw;
+    margin-top: 3.5vw;
+  }
+
+  #logoDigimon img {
+    width: 15vw;
+  }
+
+  .transparenteDigimon {
+    width: 10vw;
+    margin-block: 6.5vw;
+  }
+
+  #pNav {
+    font-size: 1.5vw;
+    margin-bottom: 25vw;
+    padding-bottom: 10vw;
+  }
+
+  .carta {
+    width: 20vw;
+  }
+
+  h5 {
+    font-size: 2vw;
+  }
+
+  .carta p {
+    font-size: 1.5vw;
+  }
+
+  button {
+    font-size: 1.5vw;
+  }
+}
+
+@media  (min-width: 1025px) and (max-width: 1200px) {
+    nav h1 {
+        font-size: 3.5vw;
+        font-weight: 700;
+        line-height: 3.5vw;
+        margin-top: 3.5vw;
+      }
+    
+      #logoDigimon img {
+        width: 12.5vw;
+      }
+    
+      .transparenteDigimon {
+        width: 7.5vw;
+        margin-block: 7.5vw;
+      }
+    
+      #pNav {
+        font-size: 1vw;
+        margin-bottom: 2vw;
+        padding-bottom: 10vw;
+      }
+    
+      h5 {
+        font-size: 2.5vw;
+      }
+    
+      .carta p {
+        font-size: 2vw;
+      }
+    
+      button {
+        font-size: 2vw;
+      }
+}
+
+
+@media (min-width: 1201px) {
+    nav h1 {
+        font-size: 2.5vw;
+        font-weight: 800;
+        line-height: 2.5vw;
+        margin-top: 3.5vw;
+      }
+    
+      #logoDigimon img {
+        width: 10vw;
+      }
+    
+      .transparenteDigimon {
+        width: 5vw;
+        margin-block: 2.5vw;
+      }
+    
+      #pNav {
+        font-size: 1vw;
+        margin-bottom: 2vw;
+        padding-bottom: 10vw;
+      }
+    
+      h5 {
+        font-size: 2vw;
+      }
+    
+      .carta p {
+        font-size: 1.5vw;
+      }
+    
+      button {
+        font-size: 1.5vw;
+      }
+}
