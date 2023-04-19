@@ -1,0 +1,62 @@
+*{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    background: linear-gradient(90deg, rgba(29,95,182,1) 5%, rgba(68,208,233,1) 95%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cajaInformativa{
+    background-color: white;
+    width: 40%;
+    padding: 2vw;
+    text-align: center;
+    margin-top: 5vw;
+    padding-bottom: 0;
+}
+
+#cajaInformativa h1{
+    font-size: 4.5vw;
+}
+
+#cajaInformativa p{
+    font-size: 3.5vw;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    width: 40%;
+    padding: 2vw;
+    background-color: white;
+    padding-top: 0;
+    margin-bottom: 5vw;
+}
+
+input{
+    margin-inline: 2vw;
+    padding: 2vw;
+    background-color: rgb(233, 233, 233);
+    border: none;
+    font-size: 1.5vw;
+}
+
+#botonEnviar{
+    font-size: 1.5vw;
+    color: white;
+    background: linear-gradient(90deg, rgba(29,95,182,1) 5%, rgba(68,208,233,1) 95%);
+}
+
+span{
+    text-align: center;
+    color: rgb(184, 184, 184);
+    font-size: 1.2vw;
+}
+
+a{
+    text-decoration: none;
+}
