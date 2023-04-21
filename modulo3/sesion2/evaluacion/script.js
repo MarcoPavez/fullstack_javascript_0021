@@ -32,7 +32,6 @@ function celcius_a_farenheit() {
     /* checkbox = F => convertisCelsius() */
     /* checkbox = F => convertisCelsius() */
     inputCheckBox.addEventListener('change', function () {
-
         if (!this.checked) {
             convertirCelsius()
         } else {
