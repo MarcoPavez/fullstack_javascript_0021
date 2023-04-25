@@ -1,0 +1,81 @@
+html{
+    display: flex;
+    justify-content: center;
+}
+
+body{
+    width: 40%;
+}
+
+#divTitulo{
+    background-color: rgb(233, 233, 233);
+    padding-block: 3vw;
+}
+
+h1{
+    text-align: center;
+    margin: 0;
+    font-size: 2.75vw;
+}
+
+#textoOfertaDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: green;
+}
+
+#textoOfertaDiv span{
+    text-align: center;
+    font-size: 2vw;
+    color: rgb(187, 187, 12);
+    font-weight: 900;
+}
+
+#descuento{
+    text-align: center;
+    font-size: 7vw;
+    margin: 0;
+    font-weight: 900;
+}
+
+#descuento{
+    color: rgb(187, 187, 12);
+}
+
+#divTextoOferta{
+    background-color: rgb(233, 233, 233);
+}
+
+
+
+#obtenerDescuento{
+    background-color: rgb(37, 37, 66);
+    width: auto;
+    height: 4vw;
+    padding-block: 2vw;
+}
+
+#textoOferta{
+    margin: 0;
+    padding-block: 1vw;
+    font-size: 1.2vw;
+}
+
+h2{
+    text-align: center;
+    color: cadetblue;
+    margin: 0;
+}
+
+input{
+    color: yellow;
+}
+
+#codigoDescuentoFinal{
+    display: none;
+    color: yellow;
+    font-size: 1.5vw;
+    text-align: center;
+    font-weight: 700;
+}
