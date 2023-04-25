@@ -1,0 +1,19 @@
+.card-img-overlay h5 {
+    display: none;
+}
+
+.card-img-overlay p {
+    display: none;
+}
+
+.card-img-overlay:hover p {
+    display: block;
+}
+
+.card-img-overlay:hover h5 {
+    display: block;
+}
+
+.card-img-overlay:hover{
+    background: rgb(0,0,0,0.8);
+}
