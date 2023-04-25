@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./assets/styles/styles.css">
+    <title>¡Vuela Ya!</title>
+  </head>
+  <body>
+    <nav>
+      <h1>FlyNow</h1>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+        <path
+          d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+        />
+      </svg>
+    </nav>
+
+    <main>
+      <h2>¿A dónde quieres ir?</h2>
+      <p>
+        Estás a un paso de ir al destino de tus sueños en tus vacaciones. A
+        continuación, cuentanos donde quieres ir.
+      </p>
+      <section id="seleccionOrigenDestino">
+        <div class="origenDestino">
+          <label for="origen">Origen:</label>
+          <select name="origen" id="origen">
+            <option value="New York">New York, USA</option>
+            <option value="London">London, UK</option>
+            <option value="Boston">Boston, USA</option>
+            <option value="Paris">Paris, FR</option>
+            <option value="Chicago">Chicago, USA</option>
+            <option value="Venecia">Venecia, IT</option>
+          </select>
+          <input type="date" name="fechaOrigen" id="fechaOrigen" />
+        </div>
+        <div class="origenDestino">
+          <label for="destino">Destino:</label>
+          <select name="destino" id="destino">
+            <option value="New York">New York, USA</option>
+            <option value="London">London, UK</option>
+            <option value="Boston">Boston, USA</option>
+            <option value="Paris">Paris, FR</option>
+            <option value="Chicago">Chicago, USA</option>
+            <option value="Venecia">Venecia, IT</option>
+          </select>
+          <input type="date" name="fechaDestino" id="fechaDestino" />
+        </div>
+      </section>
+
+      <section>
+        <div>
+            <h2>Itinerario</h2>
+            <div>
+                <div id="resultadoOrigen">
+
+                </div>
+                <div id="resultadoDestino">
+
+                </div>
+            </div>
+        </div>
+      </section>
+
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+  </body>   
+</html>
