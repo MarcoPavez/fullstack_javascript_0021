@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+html, body {
+  min-height: 100vh;
+  max-width: 100%;
+  font-family: 'Arial', sans-serif;
+}
+body{
+  background: #88aabf;
+}
+h1{
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #333030;
+  font-size: 2.5rem;
+}
+
+.button{
+  width: 67px;
+  height: 45px;
+  margin: 0 4px;
+  cursor: pointer;
+  background: #617884;
+  color: white;
+  font-size: 1.5rem;
+  padding: 1px 0 0 0;
+  border: none;
+  border-radius: 4px;
+  
+}
+button.red{
+  background: #de3c4c;
+}
+button.blue{
+  background: #3c8cdb;
+}
+.button:hover{
+  
+  transition: ease-in-out 0.1s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-size: 1.65rem;
+  color: rgb(218, 217, 193);
+}
+.row{
+  margin: 8px 0;
+}
+.row input:hover{
+transform: scale(1.02);
+  transition: ease-in-out 0.2s;
+}
+.rowf{
+  margin: 60px;
+  background: #2F495C;
+  padding: 3rem;
+  padding-bottom: 1rem;
+  border-radius: 16px;
+  box-shadow: rgb(50 50 93 / 25%) 20px 50px 100px -20px, rgb(0 0 0 / 30%) 10px 30px 60px -30px;
+  user-select: none;
+}
+.row input{
+  font-size: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  margin-bottom: 1.5rem;
+  height: 35px;
+  width: 280px;
+  color: white;
+  background-color: black;
+}
+.text-center{
+  text-align: center;
+}
+.mx-auto{
+  margin: auto;
+}
+
+.flex{
+  display:flex;
+} 
+.flex-col{
+  flex-direction: column;
+}
+
+.items-center{
+  align-items: center;
+}
+#backspace{
+  margin-left: 232px;
+}
+
+#history{
+	background-color: black;
+	color: white;
+}
