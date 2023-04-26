@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="./assets/styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/styles.css" />
     <title>¡Vuela Ya!</title>
   </head>
   <body>
@@ -27,6 +27,7 @@
         <div class="origenDestino">
           <label for="origen">Origen:</label>
           <select name="origen" id="origen">
+            <option value="" disabled selected>Selecciona tu ciudad de origen</option>
             <option value="New York">New York, USA</option>
             <option value="London">London, UK</option>
             <option value="Boston">Boston, USA</option>
@@ -39,6 +40,7 @@
         <div class="origenDestino">
           <label for="destino">Destino:</label>
           <select name="destino" id="destino">
+            <option value="" selected disabled>Selecciona un destino</option>
             <option value="New York">New York, USA</option>
             <option value="London">London, UK</option>
             <option value="Boston">Boston, USA</option>
@@ -51,21 +53,17 @@
       </section>
 
       <section>
-        <div>
-            <h2>Itinerario</h2>
-            <div>
-                <div id="resultadoOrigen">
-
-                </div>
-                <div id="resultadoDestino">
-
-                </div>
-            </div>
+        <div id="itinerario">
+          <h2>Itinerario</h2>
+          <div id="divItinerario">
+            <div id="resultadoOrigen"></div>
+            <div id="resultadoDestino"></div>
+          </div>
+          
         </div>
       </section>
-
     </main>
 
     <script src="./assets/js/script.js"></script>
-  </body>   
+  </body>
 </html>
