@@ -1,0 +1,33 @@
+html {
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  width: 40%;
+  height: 50%;
+}
+
+#contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  background-color: black;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 2vw;
+  padding: 1vw;
+}
+
+*{
+    color: white;
+    text-align: center;
+}
+
+input{
+    text-align: center;
+}
+
+#submit{
+    color: black;
+}
