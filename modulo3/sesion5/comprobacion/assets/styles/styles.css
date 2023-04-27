@@ -1,0 +1,42 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#inscripcion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5vw;
+    width: 40%;
+}
+
+#botonSubmit{
+    width: 50%;
+    border: 0;
+}
+
+input{
+    width: 100%;
+    border: 0;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+h4{
+    text-align: center;
+}
+
+#div{
+    display: flex;
+    gap: 6vw;
+}
