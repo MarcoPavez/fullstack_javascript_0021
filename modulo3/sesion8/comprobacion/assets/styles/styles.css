@@ -1,0 +1,23 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    background-color: rgb(97, 38, 38);
+    color: white;
+    border-radius: 1vw;
+    padding: 2.5vw;
+}
+
+h2{
+    margin-top: 0;
+}
+
+input[type="submit"]{
+    margin-top: 2vw;
+}
