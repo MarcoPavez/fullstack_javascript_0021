@@ -1,9 +1,14 @@
 // Acceder a elementos del DOM
-let btnCalcular = document.getElementById("btnCalcular");
+let inputNombreGasto = document.getElementById("inputNombreGasto");
+let inputMontoGasto = document.getElementById("inputMontoGasto");
+let bodyTabla = document.getElementById("bodyTabla");
+
 let inputPresupueto = document.getElementById("inputPresupueto");
 let presupuesto = document.getElementById("presupuesto");
 let totalGastos = document.getElementById("totalGastos");
 let saldo = document.getElementById("saldo");
+
+let btnCalcular = document.getElementById("btnCalcular");
 let btnAnadir = document.getElementById("btnAnadir");
 
 // Función constructora
@@ -48,7 +53,7 @@ function actualizarTabla(){
 }
 
 
-// Elimina
+// Eliminar gasto
 function eliminar(index){
     listaGastos = listaGastos.filter((gasto,indice) => indice != index);
     let gastoActualizado = listaGastos.reduce((acumulador,valorActual) => acumulador + valorActual.monto, 0);
@@ -57,7 +62,7 @@ function eliminar(index){
 }
 
 
-//2.1 funcion para actualizar el saldo
+// Actualizar el saldo
 function actualizarSaldo(){
     let pptoResumen = presupuesto.innerHTML.replaceAll(".","");
     let gastosResumen = listaGastos.reduce((acumulador,valorActual) => acumulador + valorActual.monto,0);
@@ -67,19 +72,14 @@ function actualizarSaldo(){
 }
 
 
-//2. Agrego funcion al btn calcular
+// Agrega funcion al btn calcular
 btnCalcular.addEventListener('click', function() {
     presupuesto.innerHTML = inputPresupueto.value.replace(/\D/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, ".");
     actualizarSaldo();
     presupuesto.innerHTML > 0 ? btnAnadir.removeAttribute("disabled") : btnAnadir.setAttribute("disable",true);
 })
 
-//3. accedo al DOM
-let inputNombreGasto = document.getElementById("inputNombreGasto");
-let inputMontoGasto = document.getElementById("inputMontoGasto");
-let bodyTabla = document.getElementById("bodyTabla");
-
-//4. agrego funcion al btnAnadir
+// Agrega funcion al btnAnadir
 btnAnadir.addEventListener('click', function() {
     let nombre = inputNombreGasto.value;
     let monto = parseInt(inputMontoGasto.value);
