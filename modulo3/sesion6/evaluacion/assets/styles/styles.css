@@ -1,0 +1,56 @@
+/* Estructura general */
+main{
+    display: flex;
+    justify-content: center;
+}
+
+section{
+    width: 40%;
+    border-style: solid;
+    border-width: 1px;
+    padding: 2vw;
+}
+
+/* Section principal */
+#inputNombres{
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+}
+
+/* Titulo */
+h2{
+    margin-top: 0;
+    text-align: center;
+}
+
+/* Contenedor input-botones */
+.agregarEliminar{
+    display: flex;
+}
+
+/* Inputs */
+
+input{
+    border-radius: 0.25vw;
+    border-style: solid;
+}
+
+/* Botones */
+#agregar{
+    color: green;
+    background-color: white;
+    border-style: solid;
+    border-radius: 0.25vw;
+    border-width: 1px;
+    border-color: green;
+}
+
+#eliminar{
+    color: red;
+    background-color: white;
+    border-style: solid;
+    border-radius: 0.25vw;
+    border-width: 1px;
+    border-color: red;
+}
