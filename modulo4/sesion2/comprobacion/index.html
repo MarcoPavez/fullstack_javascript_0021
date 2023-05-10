@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+    <title>Conciertos+</title>
+</head>
+<body>
+    
+    <main>
+        <button id="btn-signup">SIGN UP</button>
+        <button id="btn-vip">VIP</button>
+        <section id="section-regular">
+            <h4>Complete los siguientes campos para crear su cuenta. Considere que a este tipo de cuenta se le asigna un nombre de usuario aleatorio.</h4>
+            
+            <div>
+                <label for="correo">Correo electrónico</label>
+                <input type="email" name="correo" id="correo" class="regular">
+            </div>
+            <div>
+                <label for="contrasena">Contraseña</label>
+                <input type="password" name="contrasena" id="contrasena" class="regular">
+            </div>
+            <div>
+                <input type="checkbox" name="condiciones" id="condiciones" class="regular">
+                <label for="condiciones">Acepto los términos y condiciones</label>
+
+                <input type="submit" name="btn-submit" id="btn-submit-regular">
+            </div>
+        </section>
+        <section id="section-vip">
+            <h4>Complete los siguientes campos para crear su cuenta VIP. Podrás crear un nombre de usuario personalizado</h4>
+            <div>
+                <label for="nombreVIP">Nombre de usuario</label>
+                <input type="text" name="nombreVIP" id="nombreVIP" class="vip">
+            </div>
+            <div>
+                <label for="correoVIP">Correo electrónico</label>
+                <input type="email" name="correoVIP" id="correoVIP" class="vip">
+            </div>
+            <div>
+                <label for="contrasenaVIP">Contraseña</label>
+                <input type="password" name="contrasenaVIP" id="contrasenaVIP" class="vip">
+            </div>
+            <div>
+                <input type="checkbox" name="condicionesVIP" id="condicionesVIP" class="vip">
+                <label for="condicionesVIP">Acepto los términos y condiciones</label>
+
+                <input type="submit" name="btn-submit" id="btn-submit-vip">
+            </div>
+        </section>
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
