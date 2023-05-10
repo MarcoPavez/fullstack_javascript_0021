@@ -1,0 +1,30 @@
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+}
+
+#div-general{
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+}
+
+h2{
+    text-align: center;
+}
+
+
+#btn-submit{
+    width: 50%;
+    margin-top: 2vw;
+}
+
+
