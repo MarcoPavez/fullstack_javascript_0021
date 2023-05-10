@@ -22,7 +22,7 @@ btnSubmit.addEventListener("click", () => {
     let final = calculo(valorCalculo,interesCalculo,cuotasCalculo).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
     let resultado = document.createElement("p");
-    resultado.innerText = `Puedes pagar en ${cuotasCalculo} cuotas de $${finalFinal}`
+    resultado.innerText = `Puedes pagar en ${cuotasCalculo} cuotas de $${final}`
     main.innerText = resultado.innerText
 })
 
