@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+    <title>NuestroBank</title>
+</head>
+
+<body>
+
+    <main>
+        <section>
+            <h2>EASYPAGO</h2>
+            <div id="div-general">
+                <div class="div-easypago">
+                    <label for="monto">¿Cuánto tienes que pagar?</label>
+                    <input type="number" id="monto" name="monto">
+                </div>
+                <div class="div-easypago">
+                    <label for="interes">¿Cuánto interés (%) debes pagar?</label>
+                    <input type="number" id="interes" name="interes">
+                </div>
+                <div class="div-easypago">
+                    <label for="cuotas">¿En cuántas cuotas puedes pagarlo?</label>
+                    <input type="number" id="cuotas" name="cuotas">
+                </div>
+            </div>
+            <input type="submit" id="btn-submit">
+            <p id="resultado"></p>
+        </section>
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
