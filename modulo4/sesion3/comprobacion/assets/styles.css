@@ -1,0 +1,65 @@
+main{
+    display: flex;
+    gap: 1vw;
+    padding-inline: 15vw;
+}
+
+section{
+    border-style: solid;
+    border-width: 1px;
+    padding: 1vw;
+}
+
+/* MENÚ BEBER */
+
+#form-beber{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.lista-beber{
+    display: flex;
+    justify-content: space-between;
+    border-style: solid;
+    border-width: 1px;
+    padding: 0.25vw;
+}
+
+.lista-beber p{
+    margin: 0;
+}
+
+
+/* MENÚ COMER */
+
+#form-comer{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.lista-comer{
+    border-style: solid;
+    border-width: 1px;
+    padding: 0.5vw;
+}
+
+/* CUENTA */
+
+#div-cuenta{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#item p,
+#item-precio p,
+#item-extra p{
+    margin: 0.25vw;
+}
+
+
+#div-total{
+    display: flex;
+    justify-content: space-evenly;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles.css">
+    <title>Buona Pizza</title>
+</head>
+
+<body>
+
+    <main>
+
+        <section>
+            <h2>Mejora tu pizza</h2>
+            <p>Puedes elegir 3 ingredientes gratis. Cada ingrediente adicional cuesta $800 pesos cada uno.</p>
+
+            <form id="form-beber">
+                <h4>Ingredientes disponibles para agregar:</h4>
+                <div class="lista-beber">
+                    <div>
+                        <input type="checkbox" name="carne">
+                        <label for="carne">Carne</label>
+                    </div>
+                </div>
+                <div class="lista-beber">
+                    <div>
+                        <input type="checkbox" name="pollo">
+                        <label for="pollo">Pollo</label>
+                    </div>
+                </div>
+                <div class="lista-beber">
+                    <div>
+                        <input type="checkbox" name="tocino">
+                        <label for="tocino">Tocino</label>
+                    </div>
+                </div>
+                <div class="lista-beber">
+                    <div>
+                        <input type="checkbox" name="mozzarella">
+                        <label for="mozzarella">Mozzarela</label>
+                    </div>
+                </div>
+                <div class="lista-beber">
+                    <div>
+                        <input type="checkbox" name="champinon">
+                        <label for="champinon">Champiñon</label>
+                    </div>
+                </div>
+                <div class="lista-beber">
+                    <div>
+                        <input type="checkbox" name="cebolla">
+                        <label for="cebolla">Cebolla</label>
+                    </div>
+                </div>
+                <div class="lista-beber">
+                    <div>
+                        <input type="checkbox" name="pina">
+                        <label for="pina">Piña</label>
+                    </div>
+                </div>
+                <div class="lista-beber">
+                    <div>
+                        <input type="checkbox" name="pimenton">
+                        <label for="pimenton">Pimentón</label>
+                    </div>
+                </div>
+            </form>
+            <div id="item">
+                <h3><strong>Los ingredientes seleccionados son:</strong></h3>
+            </div>
+
+            <div id="item-extra">
+                <h3><strong>Los ingredientes extra son:</strong></h3>
+            </div>
+        </section>
+
+        <section>
+            <h4>Resumen del pedido</h4>
+            <p>Esperamos que disfrute de su comida ¡Ciao!</p>
+            <div id="div-cuenta">
+                
+                <div id="item-precio">
+                    <h3>Precio</h3>
+                    <p>Pizza XL: $15.000</p>
+                    <p>Ingredientes:</p>
+                    <p id="item-extra-precio"></p>
+                </div>
+            </div>
+            <div id="div-total">
+                <div>
+                    <h3>Total</h3>
+                </div>
+                <div>
+                    <p id="total"></p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
