@@ -1,0 +1,50 @@
+main{
+    display: flex;
+    justify-content: center;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    gap: 1vw;
+}
+
+div{
+    display: flex;
+    gap: 2vw;
+}
+
+
+#asuntoMensaje{
+    display: flex;
+    flex-direction: column;
+}
+
+#div-cc{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#div-cc input{
+    width: 25%;
+}
+
+#div-cc-input{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+input{
+    border: none;
+}
+
+#submit{
+    width: 50%;
+    transform: translate(50%);
+    background-color: rgb(18, 136, 136);
+    border: none;
+    border-radius: 1vw;
+    color: white;
+}
