@@ -1,0 +1,52 @@
+h2 {
+    text-align: center;
+}
+
+main {
+    display: flex;
+    gap: 2.5vw;
+    align-items: center;
+    height: 100%;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 25vw;
+    width: 100%;
+}
+
+#section-rangos {
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    height: 100%;
+    gap: 5vw;
+}
+
+#section-cartas {
+    display: flex;
+    flex-direction: column;
+    gap: 15vw;
+    width: 90%;
+}
+
+#principales,
+#secundarios,
+#relevantes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vw;
+}
+
+.carta {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 1vw;
+    padding: 1vw;
+    width: 20vw;
+    height: 10vw;
+}
