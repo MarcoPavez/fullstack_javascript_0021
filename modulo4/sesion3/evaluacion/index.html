@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <main>
+        <section>
+            <div>
+                <label for="destinatario">PARA: </label>
+                <input type="text" id="destinatario" name="destinatario" placeholder="email destinatario">
+            </div>
+            <div id="asuntoMensaje">
+                <input type="text" name="asunto" id="asunto" placeholder="ASUNTO">
+                <input type="text" name="mensaje" id="mensaje" placeholder="MENSAJE">
+            </div>
+            <div>
+                <label for="remitente">DE: </label>
+                <input type="text" name="remitente" id="remitente" placeholder="email remitente">
+            </div>
+            <div id="div-cc">
+                <label for="copia">CC: </label>
+                <div id="div-cc-input">
+                    <input type="text" name="copia" class="copia" placeholder="emails copia">
+                    <input type="text" name="copia" class="copia" placeholder="emails copia">
+                    <input type="text" name="copia" class="copia" placeholder="emails copia">
+                    <input type="text" name="copia" class="copia" placeholder="emails copia">
+                    <input type="text" name="copia" class="copia" placeholder="emails copia">
+                    <input type="text" name="copia" class="copia" placeholder="emails copia">
+                </div>
+            </div>
+            <button id="submit">Enviar correo</button>
+
+        </section>
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
