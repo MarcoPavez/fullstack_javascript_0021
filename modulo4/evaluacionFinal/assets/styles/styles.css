@@ -1,5 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&display=swap');
+
+*{
+    font-family: 'Arimo', sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+
 h2 {
     text-align: center;
+}
+
+h3, h4{
+    margin-top: 0;
+}
+
+p{
+    margin: 0;
 }
 
 main {
@@ -15,7 +33,7 @@ aside {
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 25vw;
+    height: 15vw;
     width: 100%;
 }
 
@@ -24,13 +42,15 @@ aside {
     flex-direction: column;
     width: 10%;
     height: 100%;
-    gap: 5vw;
+    border-right-style: solid;
+    border-right-width: 2px;
+    border-right-color: lightgray;
 }
 
 #section-cartas {
     display: flex;
     flex-direction: column;
-    gap: 15vw;
+    gap: 6.5vw;
     width: 90%;
 }
 
@@ -42,11 +62,72 @@ aside {
     gap: 2vw;
 }
 
+.container-circle{
+    display: flex;
+    align-items: center;
+    width: 15%;
+    height: 100%;
+}
+
+.container-texto{
+    width: 85%;
+}
+
 .carta {
+    display: flex;
     border-style: solid;
+    border-color: white;
+    gap: 1vw;
     border-width: 1px;
     border-radius: 1vw;
     padding: 1vw;
-    width: 20vw;
-    height: 10vw;
+    width: 15vw;
+    box-shadow: 1px 1px 10px 0px #cfcfcf;
 }
+
+
+
+/* Estilos SVG y animaciones */
+
+svg{
+    width: 15%;
+}
+
+.loading{
+    fill: red;
+}
+
+.checked{
+    fill: green
+}
+
+.circle{
+    width: 100%;
+}
+
+.spin {
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+
+  #principales svg{
+    fill: lightcoral;
+    
+  }
+
+  #secundarios svg{
+    fill:lightgreen
+  }
+
+  #relevantes svg{
+    fill: lightskyblue;
+  }
