@@ -1,0 +1,21 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2vw;
+    width: 30%;
+}
+
+.clock {
+    display: none;
+    border-style: solid;
+    border-width: 1px;
+    padding: 1vw;
+    border-radius: 1vw;
+  }
+
+  .flag {
+    width: 20px;
+    height: 15px;
+    margin-right: 5px;
+  }
