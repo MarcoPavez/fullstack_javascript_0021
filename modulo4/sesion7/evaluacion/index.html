@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Walkie Talkie App</title>
+  <style>
+    .message {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Walkie Takie</h1>
+  
+  <label for="message">Mensaje:</label>
+  <input type="text" id="message" placeholder="Mensaje">
+  
+  <label for="recipient">Receptor:</label>
+  <input type="text" id="recipient" placeholder="Receptor">
+  
+  <button id="sendButton">Send</button>
+  
+  <div id="statusMessage"></div>
+  
+  <script>
+    // Function to simulate sending a message
+    function sendMessage(message, recipient) {
+      return new Promise((resolve, reject) => {
+        // Simulate an asynchronous operation (e.g., HTTP request)
+        setTimeout(() => {
+          // Check if the previous message has been sent already
+          if (document.getElementById('statusMessage').innerText === 'Message sent') {
+            reject('Another message is already sent. Cannot send multiple messages.');
+          } else {
+            // Simulate successful message delivery
+            resolve();
+          }
+        }, 2000); // Delay of 2 seconds
+      });
+    }
+    
+    // Event listener for the send button click
+    document.getElementById('sendButton').addEventListener('click', function() {
+      const message = document.getElementById('message').value;
+      const recipient = document.getElementById('recipient').value;
+      
+      // Call the sendMessage function and handle the promise result
+      sendMessage(message, recipient)
+        .then(() => {
+          // Message sent successfully
+          document.getElementById('statusMessage').innerText = 'Message sent';
+        })
+        .catch((error) => {
+          // Failed to send message
+          document.getElementById('statusMessage').innerText = error;
+        });
+    });
+  </script>
+</body>
+</html>
